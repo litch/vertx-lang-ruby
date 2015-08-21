@@ -63,7 +63,7 @@ class ContainerHolder {
         newEnv.put("GEM_PATH", gemPath);
         config.setEnvironment(newEnv);
       }
-      cont.setCompatVersion(CompatVersion.RUBY1_9);
+      cont.setCompatVersion(CompatVersion.RUBY2_0);
       cont.setError(new PrintStream(new OutputStream() {
         @Override
         public void write(int b) throws IOException {
